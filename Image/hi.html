@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List App - Easy Tutorials</title>
+    <link rel="stylesheet" href="hi.css">
+    <script src="https://kit.fontawesome.com/56712feacd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>  
+        <img src="http://127.0.0.1:5500/Image/thumbnail.png" class="song-img">  
+        <h1>Ngozi</h1>
+        <p>Crayon Ft. Ayra Starr</p>
+
+        <audio id="song">
+            <source src="Some College National.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" id="progress" value="0">
+
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+
+        </div>
+    </div>
+<script src="hi.js"></script>
+</body>
+</html>
